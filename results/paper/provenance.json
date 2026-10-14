@@ -1,0 +1,637 @@
+{
+  "combined_report": "20261011_pair_free_default/combined/power_index_benchmark.json",
+  "source_reports": {
+    "20261011_pair_free_default/combined/power_index_benchmark.json": {
+      "sha256": "900efbd4c2f670418c0f0a25a57fe5561cb90050cb94080eb68c36185e101955",
+      "settings": {
+        "generated": "2026-10-11 21:26:48 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "banzhaf",
+          "deegan_packel",
+          "johnston",
+          "shapley"
+        ],
+        "merge_mode": "overlay",
+        "methods": [
+          "armijos_toro_generating_functions",
+          "bolus",
+          "bolus_improved",
+          "dp",
+          "kakimura",
+          "qobdd",
+          "qobdd_sortedlist"
+        ],
+        "repeats": 3,
+        "repetitions_description": "see source settings",
+        "suite": "merged",
+        "timeout": 120.0
+      }
+    },
+    "20261010_095236/combined/power_index_benchmark.json": {
+      "sha256": "e0979183636b0ea3fcb1efbbccce81b5a74da20f9400cf20bb65fb4a9b4c00fa",
+      "settings": {
+        "generated": "2026-10-10 09:52:42 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "banzhaf",
+          "shapley",
+          "deegan_packel",
+          "johnston"
+        ],
+        "methods": [
+          "dp",
+          "kakimura",
+          "bolus",
+          "qobdd"
+        ],
+        "repeats": 3,
+        "repetitions_description": "see source settings",
+        "suite": "merged",
+        "timeout": 120.0
+      }
+    },
+    "20261010_083557/extended/power_index_benchmark.json": {
+      "sha256": "fa78319e7e7825bd7505c3d332613336c39695494945899d0e6797cc73316a1d",
+      "settings": {
+        "bolus_construction": "Bolus interval tables using SortedList",
+        "bolus_evaluation": "recursive weighted residual counting",
+        "dp_evaluation": "EPIC recurrences, integral Deegan-Packel and packed cardinality counts",
+        "generated": "2026-10-10 08:35:57 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "banzhaf",
+          "shapley",
+          "deegan_packel",
+          "johnston"
+        ],
+        "kakimura_evaluation": "exact truncated formal-power-series formulas; divide-and-conquer Kronecker convolution",
+        "machine": "AMD64",
+        "methods": [
+          "dp",
+          "kakimura",
+          "bolus",
+          "qobdd"
+        ],
+        "platform": "Windows-10-10.0.19045-SP0",
+        "python": "3.10.4",
+        "qobdd_route": "last-critical decomposition for Banzhaf; explicit last-critical-player coefficients for Shapley--Shubik; full coefficient-row reverse reading for Deegan--Packel and Johnston",
+        "repeats": 1,
+        "suite": "extended",
+        "timeout": 120.0
+      }
+    },
+    "20261009_211312/full/power_index_benchmark.json": {
+      "sha256": "75f83c86f6b824774d5c912febb52c4c6b83be84641e92f6391c692a3e4d0fa2",
+      "settings": {
+        "bolus_construction": "Bolus interval tables using SortedList",
+        "bolus_evaluation": "recursive weighted residual counting",
+        "dp_evaluation": "EPIC recurrences, integral Deegan-Packel and packed cardinality counts",
+        "generated": "2026-10-09 21:13:12 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "banzhaf",
+          "shapley",
+          "deegan_packel",
+          "johnston"
+        ],
+        "kakimura_evaluation": "exact truncated formal-power-series formulas; divide-and-conquer Kronecker convolution",
+        "machine": "AMD64",
+        "methods": [
+          "dp",
+          "kakimura",
+          "bolus",
+          "qobdd"
+        ],
+        "platform": "Windows-10-10.0.19045-SP0",
+        "python": "3.10.4",
+        "qobdd_route": "last-critical decomposition for Banzhaf; explicit last-critical-player coefficients for Shapley--Shubik; full coefficient-row reverse reading for Deegan--Packel and Johnston",
+        "repeats": 3,
+        "suite": "full",
+        "timeout": 120.0
+      }
+    },
+    "20261011_151135/combined/power_index_benchmark.json": {
+      "sha256": "94f54c0281b897da821690572687bd1475b15a1d156aa2229d05a1efcc964ac4",
+      "settings": {
+        "generated": "2026-10-11 15:34:21 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "banzhaf",
+          "deegan_packel",
+          "johnston",
+          "shapley"
+        ],
+        "merge_mode": "overlay",
+        "methods": [
+          "bolus",
+          "bolus_improved",
+          "dp",
+          "kakimura",
+          "qobdd",
+          "qobdd_sortedlist"
+        ],
+        "repeats": 3,
+        "repetitions_description": "see source settings",
+        "suite": "merged",
+        "timeout": 120.0
+      }
+    },
+    "20261011_151135/staudacher_linear/power_index_benchmark.json": {
+      "sha256": "f9d68bbf79d17eb1d3ed325a6c5f6ceed384feca479458548583ca2ea1b6df8a",
+      "settings": {
+        "bolus_construction": "Bolus interval tables using SortedList",
+        "bolus_evaluation": "original Shapley and MinWin Deegan--Packel coefficient convolutions",
+        "bolus_improved_evaluation": "unpacked weighted Shapley and MinWin Deegan--Packel residual readings",
+        "default_methods_policy": "qobdd with prefix-sum memoization and explicit_last_critical Shapley; pair-free scalar preparation for Banzhaf and Johnston; other methods require explicit --methods",
+        "dp_evaluation": "EPIC recurrences, integral Deegan-Packel and packed cardinality counts",
+        "generated": "2026-10-11 15:34:00 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "banzhaf",
+          "shapley",
+          "deegan_packel",
+          "johnston"
+        ],
+        "kakimura_evaluation": "exact truncated formal-power-series formulas; divide-and-conquer Kronecker convolution",
+        "machine": "AMD64",
+        "methods": [
+          "qobdd"
+        ],
+        "platform": "Windows-10-10.0.19045-SP0",
+        "python": "3.10.4",
+        "qobdd_constructions": {
+          "qobdd": "prefix-sum memoization",
+          "qobdd_sortedlist": "Bolus-style interval tables via SortedList"
+        },
+        "qobdd_route": "pair-free scalar last-critical reading for Banzhaf; explicit_last_critical Shapley--Shubik reading; full coefficient-row reverse reading for Deegan--Packel and Johnston, with pair-free nodewise scalar preparation for Johnston",
+        "qobdd_shapley_route": "explicit_last_critical",
+        "repeats": 1,
+        "staudacher_linear_banzhaf_max_n": 200,
+        "suite": "staudacher_linear",
+        "timeout": 120.0
+      }
+    },
+    "20261011_151135/extended/power_index_benchmark.json": {
+      "sha256": "955ce3543b776eee0148f06a14813d094a220218193f88bd00ac06b9399925ee",
+      "settings": {
+        "bolus_construction": "Bolus interval tables using SortedList",
+        "bolus_evaluation": "original Shapley and MinWin Deegan--Packel coefficient convolutions",
+        "bolus_improved_evaluation": "unpacked weighted Shapley and MinWin Deegan--Packel residual readings",
+        "default_methods_policy": "qobdd with prefix-sum memoization and explicit_last_critical Shapley; pair-free scalar preparation for Banzhaf and Johnston; other methods require explicit --methods",
+        "dp_evaluation": "EPIC recurrences, integral Deegan-Packel and packed cardinality counts",
+        "generated": "2026-10-11 15:15:14 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "banzhaf",
+          "shapley",
+          "deegan_packel",
+          "johnston"
+        ],
+        "kakimura_evaluation": "exact truncated formal-power-series formulas; divide-and-conquer Kronecker convolution",
+        "machine": "AMD64",
+        "methods": [
+          "qobdd"
+        ],
+        "platform": "Windows-10-10.0.19045-SP0",
+        "python": "3.10.4",
+        "qobdd_constructions": {
+          "qobdd": "prefix-sum memoization",
+          "qobdd_sortedlist": "Bolus-style interval tables via SortedList"
+        },
+        "qobdd_route": "pair-free scalar last-critical reading for Banzhaf; explicit_last_critical Shapley--Shubik reading; full coefficient-row reverse reading for Deegan--Packel and Johnston, with pair-free nodewise scalar preparation for Johnston",
+        "qobdd_shapley_route": "explicit_last_critical",
+        "repeats": 1,
+        "staudacher_linear_banzhaf_max_n": 200,
+        "suite": "extended",
+        "timeout": 120.0
+      }
+    },
+    "20261011_151135/full/power_index_benchmark.json": {
+      "sha256": "91f975ed9d26335f3ecfe843e178be7636ac43eeb7509439be29f8aceced917b",
+      "settings": {
+        "bolus_construction": "Bolus interval tables using SortedList",
+        "bolus_evaluation": "original Shapley and MinWin Deegan--Packel coefficient convolutions",
+        "bolus_improved_evaluation": "unpacked weighted Shapley and MinWin Deegan--Packel residual readings",
+        "default_methods_policy": "qobdd with prefix-sum memoization and explicit_last_critical Shapley; pair-free scalar preparation for Banzhaf and Johnston; other methods require explicit --methods",
+        "dp_evaluation": "EPIC recurrences, integral Deegan-Packel and packed cardinality counts",
+        "generated": "2026-10-11 15:13:07 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "banzhaf",
+          "shapley",
+          "deegan_packel",
+          "johnston"
+        ],
+        "kakimura_evaluation": "exact truncated formal-power-series formulas; divide-and-conquer Kronecker convolution",
+        "machine": "AMD64",
+        "methods": [
+          "qobdd"
+        ],
+        "platform": "Windows-10-10.0.19045-SP0",
+        "python": "3.10.4",
+        "qobdd_constructions": {
+          "qobdd": "prefix-sum memoization",
+          "qobdd_sortedlist": "Bolus-style interval tables via SortedList"
+        },
+        "qobdd_route": "pair-free scalar last-critical reading for Banzhaf; explicit_last_critical Shapley--Shubik reading; full coefficient-row reverse reading for Deegan--Packel and Johnston, with pair-free nodewise scalar preparation for Johnston",
+        "qobdd_shapley_route": "explicit_last_critical",
+        "repeats": 3,
+        "staudacher_linear_banzhaf_max_n": 200,
+        "suite": "full",
+        "timeout": 120.0
+      }
+    },
+    "20261010_180748/combined/power_index_benchmark.json": {
+      "sha256": "7f953d40507c46c5b55d54c87994703373b0beb533fec8bcc11257eb54ae63a6",
+      "settings": {
+        "generated": "2026-10-10 18:15:37 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "banzhaf",
+          "deegan_packel",
+          "johnston",
+          "shapley"
+        ],
+        "merge_mode": "overlay",
+        "methods": [
+          "bolus",
+          "bolus_improved",
+          "dp",
+          "kakimura",
+          "qobdd",
+          "qobdd_sortedlist"
+        ],
+        "repeats": 3,
+        "repetitions_description": "see source settings",
+        "suite": "merged",
+        "timeout": 120.0
+      }
+    },
+    "20261010_180748/staudacher_linear/power_index_benchmark.json": {
+      "sha256": "7bbdd2d9ed7b1812dbd7bd5e45bdb70e2baf5bef9b0a2ffff445cfa5bde9d440",
+      "settings": {
+        "bolus_construction": "Bolus interval tables using SortedList",
+        "bolus_evaluation": "original Shapley and MinWin Deegan--Packel coefficient convolutions",
+        "bolus_improved_evaluation": "unpacked weighted Shapley and MinWin Deegan--Packel residual readings",
+        "default_methods_policy": "qobdd_sortedlist with explicit_last_critical; other methods require explicit --methods",
+        "dp_evaluation": "EPIC recurrences, integral Deegan-Packel and packed cardinality counts",
+        "generated": "2026-10-10 18:14:50 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "shapley",
+          "deegan_packel"
+        ],
+        "kakimura_evaluation": "exact truncated formal-power-series formulas; divide-and-conquer Kronecker convolution",
+        "machine": "AMD64",
+        "methods": [
+          "bolus_improved"
+        ],
+        "platform": "Windows-10-10.0.19045-SP0",
+        "python": "3.10.4",
+        "qobdd_constructions": {
+          "qobdd": "prefix-sum memoization",
+          "qobdd_sortedlist": "Bolus-style interval tables via SortedList"
+        },
+        "qobdd_route": "last-critical decomposition for Banzhaf; explicit_last_critical Shapley--Shubik reading; full coefficient-row reverse reading for Deegan--Packel and Johnston",
+        "qobdd_shapley_route": "explicit_last_critical",
+        "repeats": 1,
+        "staudacher_linear_banzhaf_max_n": 200,
+        "suite": "staudacher_linear",
+        "timeout": 120.0
+      }
+    },
+    "20261010_180748/extended/power_index_benchmark.json": {
+      "sha256": "0430795bd253e7649bbf01dcd002b26c1bf8fae57f3d26bdd807ca4aafa9b502",
+      "settings": {
+        "bolus_construction": "Bolus interval tables using SortedList",
+        "bolus_evaluation": "original Shapley and MinWin Deegan--Packel coefficient convolutions",
+        "bolus_improved_evaluation": "unpacked weighted Shapley and MinWin Deegan--Packel residual readings",
+        "default_methods_policy": "qobdd_sortedlist with explicit_last_critical; other methods require explicit --methods",
+        "dp_evaluation": "EPIC recurrences, integral Deegan-Packel and packed cardinality counts",
+        "generated": "2026-10-10 18:08:31 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "shapley",
+          "deegan_packel"
+        ],
+        "kakimura_evaluation": "exact truncated formal-power-series formulas; divide-and-conquer Kronecker convolution",
+        "machine": "AMD64",
+        "methods": [
+          "bolus_improved"
+        ],
+        "platform": "Windows-10-10.0.19045-SP0",
+        "python": "3.10.4",
+        "qobdd_constructions": {
+          "qobdd": "prefix-sum memoization",
+          "qobdd_sortedlist": "Bolus-style interval tables via SortedList"
+        },
+        "qobdd_route": "last-critical decomposition for Banzhaf; explicit_last_critical Shapley--Shubik reading; full coefficient-row reverse reading for Deegan--Packel and Johnston",
+        "qobdd_shapley_route": "explicit_last_critical",
+        "repeats": 1,
+        "staudacher_linear_banzhaf_max_n": 200,
+        "suite": "extended",
+        "timeout": 120.0
+      }
+    },
+    "20261010_180748/full/power_index_benchmark.json": {
+      "sha256": "0579cee9bee381a6229daa1de475e417cb53cfc5f59a232dacea6ea005f23fc1",
+      "settings": {
+        "bolus_construction": "Bolus interval tables using SortedList",
+        "bolus_evaluation": "original Shapley and MinWin Deegan--Packel coefficient convolutions",
+        "bolus_improved_evaluation": "unpacked weighted Shapley and MinWin Deegan--Packel residual readings",
+        "default_methods_policy": "qobdd_sortedlist with explicit_last_critical; other methods require explicit --methods",
+        "dp_evaluation": "EPIC recurrences, integral Deegan-Packel and packed cardinality counts",
+        "generated": "2026-10-10 18:08:13 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "shapley",
+          "deegan_packel"
+        ],
+        "kakimura_evaluation": "exact truncated formal-power-series formulas; divide-and-conquer Kronecker convolution",
+        "machine": "AMD64",
+        "methods": [
+          "bolus_improved"
+        ],
+        "platform": "Windows-10-10.0.19045-SP0",
+        "python": "3.10.4",
+        "qobdd_constructions": {
+          "qobdd": "prefix-sum memoization",
+          "qobdd_sortedlist": "Bolus-style interval tables via SortedList"
+        },
+        "qobdd_route": "last-critical decomposition for Banzhaf; explicit_last_critical Shapley--Shubik reading; full coefficient-row reverse reading for Deegan--Packel and Johnston",
+        "qobdd_shapley_route": "explicit_last_critical",
+        "repeats": 3,
+        "staudacher_linear_banzhaf_max_n": 200,
+        "suite": "full",
+        "timeout": 120.0
+      }
+    },
+    "20261011_optimized_armijos_toro_dp/combined/power_index_benchmark.json": {
+      "sha256": "21462baa69cea83090357062ad2c3aa50f350cb20971328ea0572c0b6c642587",
+      "settings": {
+        "generated": "2026-10-11 20:23:26 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "banzhaf",
+          "deegan_packel",
+          "johnston",
+          "shapley"
+        ],
+        "merge_mode": "overlay",
+        "methods": [
+          "armijos_toro_generating_functions",
+          "bolus",
+          "bolus_improved",
+          "dp",
+          "kakimura",
+          "qobdd",
+          "qobdd_sortedlist"
+        ],
+        "repeats": 3,
+        "repetitions_description": "see source settings",
+        "suite": "merged",
+        "timeout": 120.0
+      }
+    },
+    "20261011_optimized_armijos_toro_dp/staudacher_linear/power_index_benchmark.json": {
+      "sha256": "237f20c9a38e0494c63de913ed00d33953873bc9aa6e1f61b03946a41d26074c",
+      "settings": {
+        "armijos_toro_evaluation": "aggregated adaptation of Procedure 1; last-critical-player partition and reverse differentiation; bounded weight/cardinality ranges, equal-weight numerator reuse, and bounded tail intervals; O(n^2 q) integer operations, O(nq) integer cells",
+        "bolus_construction": "Bolus interval tables using SortedList",
+        "bolus_evaluation": "original Shapley and MinWin Deegan--Packel coefficient convolutions",
+        "bolus_improved_evaluation": "unpacked weighted Shapley and MinWin Deegan--Packel residual readings",
+        "default_methods_policy": "qobdd with prefix-sum memoization and explicit_last_critical Shapley; pair-free scalar preparation for Banzhaf and Johnston; armijos_toro_generating_functions for Johnston; other methods require explicit --methods",
+        "dp_evaluation": "EPIC recurrences, integral Deegan-Packel and packed cardinality counts",
+        "generated": "2026-10-11 20:23:16 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "johnston"
+        ],
+        "kakimura_evaluation": "exact truncated formal-power-series formulas; divide-and-conquer Kronecker convolution",
+        "machine": "AMD64",
+        "methods": [
+          "armijos_toro_generating_functions"
+        ],
+        "platform": "Windows-10-10.0.19045-SP0",
+        "python": "3.10.4",
+        "qobdd_constructions": {
+          "qobdd": "prefix-sum memoization",
+          "qobdd_sortedlist": "Bolus-style interval tables via SortedList"
+        },
+        "qobdd_route": "pair-free scalar last-critical reading for Banzhaf; explicit_last_critical Shapley--Shubik reading; full coefficient-row reverse reading for Deegan--Packel and Johnston, with pair-free nodewise scalar preparation for Johnston",
+        "qobdd_shapley_route": "explicit_last_critical",
+        "repeats": 1,
+        "staudacher_linear_banzhaf_max_n": 200,
+        "suite": "staudacher_linear",
+        "timeout": 120.0
+      }
+    },
+    "20261011_optimized_armijos_toro_dp/extended/power_index_benchmark.json": {
+      "sha256": "b3ed8642dddad9e02e12d84aaa812f117422cc7ef2b539dcb7ef0eeff6981559",
+      "settings": {
+        "armijos_toro_evaluation": "aggregated adaptation of Procedure 1; last-critical-player partition and reverse differentiation; bounded weight/cardinality ranges, equal-weight numerator reuse, and bounded tail intervals; O(n^2 q) integer operations, O(nq) integer cells",
+        "bolus_construction": "Bolus interval tables using SortedList",
+        "bolus_evaluation": "original Shapley and MinWin Deegan--Packel coefficient convolutions",
+        "bolus_improved_evaluation": "unpacked weighted Shapley and MinWin Deegan--Packel residual readings",
+        "default_methods_policy": "qobdd with prefix-sum memoization and explicit_last_critical Shapley; pair-free scalar preparation for Banzhaf and Johnston; armijos_toro_generating_functions for Johnston; other methods require explicit --methods",
+        "dp_evaluation": "EPIC recurrences, integral Deegan-Packel and packed cardinality counts",
+        "generated": "2026-10-11 20:12:58 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "johnston"
+        ],
+        "kakimura_evaluation": "exact truncated formal-power-series formulas; divide-and-conquer Kronecker convolution",
+        "machine": "AMD64",
+        "methods": [
+          "armijos_toro_generating_functions"
+        ],
+        "platform": "Windows-10-10.0.19045-SP0",
+        "python": "3.10.4",
+        "qobdd_constructions": {
+          "qobdd": "prefix-sum memoization",
+          "qobdd_sortedlist": "Bolus-style interval tables via SortedList"
+        },
+        "qobdd_route": "pair-free scalar last-critical reading for Banzhaf; explicit_last_critical Shapley--Shubik reading; full coefficient-row reverse reading for Deegan--Packel and Johnston, with pair-free nodewise scalar preparation for Johnston",
+        "qobdd_shapley_route": "explicit_last_critical",
+        "repeats": 1,
+        "staudacher_linear_banzhaf_max_n": 200,
+        "suite": "extended",
+        "timeout": 120.0
+      }
+    },
+    "20261011_optimized_armijos_toro_dp/full/power_index_benchmark.json": {
+      "sha256": "eeda18c4c2148d89f3f5f9a9f08431e45f642e7d5ba6487f26e2de6499ace621",
+      "settings": {
+        "armijos_toro_evaluation": "aggregated adaptation of Procedure 1; last-critical-player partition and reverse differentiation; bounded weight/cardinality ranges, equal-weight numerator reuse, and bounded tail intervals; O(n^2 q) integer operations, O(nq) integer cells",
+        "bolus_construction": "Bolus interval tables using SortedList",
+        "bolus_evaluation": "original Shapley and MinWin Deegan--Packel coefficient convolutions",
+        "bolus_improved_evaluation": "unpacked weighted Shapley and MinWin Deegan--Packel residual readings",
+        "default_methods_policy": "qobdd with prefix-sum memoization and explicit_last_critical Shapley; pair-free scalar preparation for Banzhaf and Johnston; armijos_toro_generating_functions for Johnston; other methods require explicit --methods",
+        "dp_evaluation": "EPIC recurrences, integral Deegan-Packel and packed cardinality counts",
+        "generated": "2026-10-11 20:12:47 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "johnston"
+        ],
+        "kakimura_evaluation": "exact truncated formal-power-series formulas; divide-and-conquer Kronecker convolution",
+        "machine": "AMD64",
+        "methods": [
+          "armijos_toro_generating_functions"
+        ],
+        "platform": "Windows-10-10.0.19045-SP0",
+        "python": "3.10.4",
+        "qobdd_constructions": {
+          "qobdd": "prefix-sum memoization",
+          "qobdd_sortedlist": "Bolus-style interval tables via SortedList"
+        },
+        "qobdd_route": "pair-free scalar last-critical reading for Banzhaf; explicit_last_critical Shapley--Shubik reading; full coefficient-row reverse reading for Deegan--Packel and Johnston, with pair-free nodewise scalar preparation for Johnston",
+        "qobdd_shapley_route": "explicit_last_critical",
+        "repeats": 3,
+        "staudacher_linear_banzhaf_max_n": 200,
+        "suite": "full",
+        "timeout": 120.0
+      }
+    },
+    "20261011_185554_pair_free_shapley/staudacher_linear/power_index_benchmark.json": {
+      "sha256": "b5563a2ba9d8fc491095d3160cc3312ddaa033d480f3d7578f222189b575ab5a",
+      "settings": {
+        "armijos_toro_evaluation": "aggregated adaptation of Procedure 1; last-critical-player partition and reverse differentiation; bounded weight/cardinality ranges, equal-weight numerator reuse, and bounded tail intervals; O(n^2 q) integer operations, O(nq) integer cells",
+        "bolus_construction": "Bolus interval tables using SortedList",
+        "bolus_evaluation": "original Shapley and MinWin Deegan--Packel coefficient convolutions",
+        "bolus_improved_evaluation": "unpacked weighted Shapley and MinWin Deegan--Packel residual readings",
+        "default_methods_policy": "qobdd with prefix-sum memoization and explicit_last_critical Shapley; pair-free scalar preparation for Banzhaf and Johnston; armijos_toro_generating_functions for Johnston; other methods require explicit --methods",
+        "dp_evaluation": "EPIC recurrences, integral Deegan-Packel and packed cardinality counts",
+        "generated": "2026-10-11 20:59:46 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "shapley"
+        ],
+        "kakimura_evaluation": "exact truncated formal-power-series formulas; divide-and-conquer Kronecker convolution",
+        "machine": "AMD64",
+        "methods": [
+          "qobdd"
+        ],
+        "platform": "Windows-10-10.0.19045-SP0",
+        "python": "3.10.4",
+        "qobdd_constructions": {
+          "qobdd": "prefix-sum memoization",
+          "qobdd_sortedlist": "Bolus-style interval tables via SortedList"
+        },
+        "qobdd_route": "pair-free scalar last-critical reading for Banzhaf; pair_free_last_critical Shapley--Shubik reading; full coefficient-row reverse reading for Deegan--Packel and Johnston, with pair-free nodewise scalar preparation for Johnston",
+        "qobdd_shapley_route": "pair_free_last_critical",
+        "repeats": 1,
+        "staudacher_linear_banzhaf_max_n": 200,
+        "suite": "staudacher_linear",
+        "timeout": 120.0
+      }
+    },
+    "20261011_185554_pair_free_shapley/extended/power_index_benchmark.json": {
+      "sha256": "b2039f0e91f6d1dc7d74833fe9c150de008fd66713cf7c601064162fc6c50244",
+      "settings": {
+        "armijos_toro_evaluation": "aggregated adaptation of Procedure 1; last-critical-player partition and reverse differentiation; bounded weight/cardinality ranges, equal-weight numerator reuse, and bounded tail intervals; O(n^2 q) integer operations, O(nq) integer cells",
+        "bolus_construction": "Bolus interval tables using SortedList",
+        "bolus_evaluation": "original Shapley and MinWin Deegan--Packel coefficient convolutions",
+        "bolus_improved_evaluation": "unpacked weighted Shapley and MinWin Deegan--Packel residual readings",
+        "default_methods_policy": "qobdd with prefix-sum memoization and explicit_last_critical Shapley; pair-free scalar preparation for Banzhaf and Johnston; armijos_toro_generating_functions for Johnston; other methods require explicit --methods",
+        "dp_evaluation": "EPIC recurrences, integral Deegan-Packel and packed cardinality counts",
+        "generated": "2026-10-11 20:56:27 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "shapley"
+        ],
+        "kakimura_evaluation": "exact truncated formal-power-series formulas; divide-and-conquer Kronecker convolution",
+        "machine": "AMD64",
+        "methods": [
+          "qobdd"
+        ],
+        "platform": "Windows-10-10.0.19045-SP0",
+        "python": "3.10.4",
+        "qobdd_constructions": {
+          "qobdd": "prefix-sum memoization",
+          "qobdd_sortedlist": "Bolus-style interval tables via SortedList"
+        },
+        "qobdd_route": "pair-free scalar last-critical reading for Banzhaf; pair_free_last_critical Shapley--Shubik reading; full coefficient-row reverse reading for Deegan--Packel and Johnston, with pair-free nodewise scalar preparation for Johnston",
+        "qobdd_shapley_route": "pair_free_last_critical",
+        "repeats": 1,
+        "staudacher_linear_banzhaf_max_n": 200,
+        "suite": "extended",
+        "timeout": 120.0
+      }
+    },
+    "20261011_185554_pair_free_shapley/full/power_index_benchmark.json": {
+      "sha256": "aa5165213b7e525de39045f48fef83adf149d8c33cb017b65ebdd29ee6b5b710",
+      "settings": {
+        "armijos_toro_evaluation": "aggregated adaptation of Procedure 1; last-critical-player partition and reverse differentiation; bounded weight/cardinality ranges, equal-weight numerator reuse, and bounded tail intervals; O(n^2 q) integer operations, O(nq) integer cells",
+        "bolus_construction": "Bolus interval tables using SortedList",
+        "bolus_evaluation": "original Shapley and MinWin Deegan--Packel coefficient convolutions",
+        "bolus_improved_evaluation": "unpacked weighted Shapley and MinWin Deegan--Packel residual readings",
+        "default_methods_policy": "qobdd with prefix-sum memoization and explicit_last_critical Shapley; pair-free scalar preparation for Banzhaf and Johnston; armijos_toro_generating_functions for Johnston; other methods require explicit --methods",
+        "dp_evaluation": "EPIC recurrences, integral Deegan-Packel and packed cardinality counts",
+        "generated": "2026-10-11 20:56:10 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "shapley"
+        ],
+        "kakimura_evaluation": "exact truncated formal-power-series formulas; divide-and-conquer Kronecker convolution",
+        "machine": "AMD64",
+        "methods": [
+          "qobdd"
+        ],
+        "platform": "Windows-10-10.0.19045-SP0",
+        "python": "3.10.4",
+        "qobdd_constructions": {
+          "qobdd": "prefix-sum memoization",
+          "qobdd_sortedlist": "Bolus-style interval tables via SortedList"
+        },
+        "qobdd_route": "pair-free scalar last-critical reading for Banzhaf; pair_free_last_critical Shapley--Shubik reading; full coefficient-row reverse reading for Deegan--Packel and Johnston, with pair-free nodewise scalar preparation for Johnston",
+        "qobdd_shapley_route": "pair_free_last_critical",
+        "repeats": 3,
+        "staudacher_linear_banzhaf_max_n": 200,
+        "suite": "full",
+        "timeout": 120.0
+      }
+    },
+    "20261010_095221/staudacher_linear/power_index_benchmark.json": {
+      "sha256": "8c002a2b6477bfa566df9ee6fce27d2a27a592339f833b836ea9246618d25049",
+      "settings": {
+        "bolus_construction": "Bolus interval tables using SortedList",
+        "bolus_evaluation": "recursive weighted residual counting",
+        "dp_evaluation": "EPIC recurrences, integral Deegan-Packel and packed cardinality counts",
+        "generated": "2026-10-10 09:52:21 Mitteleurop\u00e4ische Sommerzeit",
+        "indices": [
+          "banzhaf",
+          "shapley",
+          "deegan_packel",
+          "johnston"
+        ],
+        "kakimura_evaluation": "exact truncated formal-power-series formulas; divide-and-conquer Kronecker convolution",
+        "machine": "AMD64",
+        "methods": [
+          "dp",
+          "kakimura",
+          "bolus",
+          "qobdd"
+        ],
+        "platform": "Windows-10-10.0.19045-SP0",
+        "python": "3.10.4",
+        "qobdd_route": "last-critical decomposition for Banzhaf; explicit last-critical-player coefficients for Shapley--Shubik; full coefficient-row reverse reading for Deegan--Packel and Johnston",
+        "repeats": 1,
+        "suite": "staudacher_linear",
+        "timeout": 120.0
+      }
+    }
+  },
+  "figure_inputs": {
+    "uniform_n": {
+      "csv_sha256": "70a9be172026b14a9ea75ba88ab820b3cf2f2ef58afe2d43a708a08bcfa943a8",
+      "plot_tex_sha256": "e3dd5ba0f33ac768fe5fec73cb2875d2a3ee740bf1cd52276232b81fcba7270d",
+      "rows": 130
+    },
+    "fixed_q_n": {
+      "csv_sha256": "e9f2284b4c43fe149518460f74ee5d2e2f5bbbc5e83d5c904522fa5e9d8da4e7",
+      "plot_tex_sha256": "bcf66b59b4abc158619b551c7235ab3a1fc1cfc4122f1ec82c20859871277630",
+      "rows": 91
+    },
+    "staudacher_n": {
+      "csv_sha256": "61a99d5068d9b847d076a1d1f264b857909f7fb493e2b8c33a5dbe2526f20d34",
+      "plot_tex_sha256": "503c312a383cd78332620a0dc7582604e7fc12bff03ef68c6ffc426bba6f686c",
+      "rows": 106
+    },
+    "staudacher_q": {
+      "csv_sha256": "a5e475bc1a7a64258d56b411c046c99fe2dbe7ebc6e592e328feb18315e9e8d2",
+      "plot_tex_sha256": "064d182d9a7ad7b24fc67bf6fdb2d5be5a30ddef71e78dc03e0423fd0e6532f2",
+      "rows": 39
+    }
+  },
+  "hardware_confirmation": {
+    "confirmed_on": "2026-10-14",
+    "scope": "All measurements reported in the paper",
+    "cpu": "Intel Core i5-3320M",
+    "nominal_clock_ghz": 2.6,
+    "ram_gb": 8,
+    "source": "Author confirmed the original measurements used the current machine and hardware configuration; CPU also read from Windows registry.",
+    "recorded_at_measurement_time": false
+  }
+}

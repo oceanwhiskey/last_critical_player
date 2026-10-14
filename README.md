@@ -31,6 +31,14 @@ residual evaluations of Bolus's formulas, and the aggregated Armijos–Toro
 Johnston DP. Points omitted from the figures after earlier timeouts are not
 added to the run. Points shown with timeout markers are attempted again.
 
+## Published measurements
+
+The fixed measurements used in the four paper figures are documented in
+[results/paper/README.md](results/paper/README.md). That directory contains
+CSV and Markdown tables, exact index vectors, timing samples where recorded,
+and measurement conditions and provenance. These historical paper results
+are separate from new runs written to `tables/<timestamp>/`.
+
 ## Algorithms and inputs
 
 `power_indices.py` contains the aggregated Johnston DP, the winning-QOBDD
@@ -48,8 +56,8 @@ coefficient-convolution evaluations are not included or measured.
 
 `staudacher_dp.py` and `kakimura_reference.py` contain the other comparison
 algorithms. `data/cases.json` contains the complete weights, quotas, measurement
-jobs, and exact reference vectors for the plotted points. Historical runtimes
-are neither read nor presented as new results. Every completed calculation is
+jobs, and exact reference vectors for the plotted points. The benchmark script does not read historical runtimes
+or present them as new results. Every completed calculation is
 checked exactly against available reference vectors and against the other
 completed methods for the same case and index.
 
